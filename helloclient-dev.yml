@@ -1,5 +1,6 @@
 name: nick
 age : 19
+password: 3353843
 
 eureka:
   client:
