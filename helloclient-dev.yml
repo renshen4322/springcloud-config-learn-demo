@@ -1,7 +1,10 @@
 name: nick
 age : 19
 password: 3353843
-header: order
+#等价于header :order
+header: '{cipher}6afa0e789715475bd06c602802d217526ace8d4f4083d0cd50b194a6e825f3d5'
+# header: order
+
 
 eureka:
   client:
