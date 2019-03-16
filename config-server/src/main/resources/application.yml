@@ -1,0 +1,60 @@
+server:
+  port: 5000
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/renshen4322/springcloud-config-learn-demo/     # 配置git仓库的地址
+          search-paths: /config-server/src/main/resources/configs                             # git仓库地址下的相对地址，可以配置多个，用,分割。
+          username: renshen4322                                        # git仓库的账号
+          password: gu425006
+        #定义去拉取配置的地址
+         #uri: D:\\IdeaProjects\\renshen\\springcloud-config-learn-demo\\config-server\\src\main\\resources\\configs
+        ###启用加密解密算法
+        encrypt:
+          enabled: true
+    ###引入账号密码机制
+  security:
+    user:
+      password: 123456
+      name: nick
+  rabbitmq:
+    host: 192.168.1.103
+    username: mark
+    password: mark123
+    port: 5672
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:10000/eureka/
+    enabled: true
+
+
+#spring:
+#  application:
+#    name: app-provider-config
+#  cloud:
+#    config:
+#      enabled: true
+#      server:
+#        svn:
+#          uri: http://ip:port/svn/mogo/Coding/app-hotpoint-parent/app-global-config
+#          username: username
+#          password: password
+#          default-label: config-repo
+#  profiles:
+
+#    active: subversion

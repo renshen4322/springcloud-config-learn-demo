@@ -1,6 +1,8 @@
+
 spring:
   application:
     name: eureka-peer
+  profiles: dev
 
 server:
   port: 10000
