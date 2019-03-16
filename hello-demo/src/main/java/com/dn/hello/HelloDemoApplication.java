@@ -30,7 +30,7 @@ public class HelloDemoApplication {
     private int age;
 
     @Value("${password}")
-    private String passWorde;
+    private String passWord;
 
     @Value("${header}")
     private String header;
@@ -45,7 +45,7 @@ public class HelloDemoApplication {
      teacher.setAge(this.age);
      teacher.setName(this.name);
      teacher.setOrder(this.header);
-     teacher.setPassWord(this.passWorde);
+     teacher.setPassWord(this.passWord);
      return teacher;
     }
 
