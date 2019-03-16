@@ -7,10 +7,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/yaojin156/tmp.git
-          force-pull: true
+          #uri: https://github.com/yaojin156/tmp.git
+          #force-pull: true
         #定义去拉取配置的地址
-#          uri: D:\\lesson-1\\config-server\\src\\main\\resources\\configs
+         uri: D:\\IdeaProjects\\renshen\\springcloud-config-learn-demo\\config-server\\src\main\\resources\\configs
         ###启用加密解密算法
         encrypt:
           enabled: true
@@ -20,9 +20,9 @@ spring:
       password: 123456
       name: nick
   rabbitmq:
-    host: localhost
-    username: guest
-    password: guest
+    host: 192.168.1.103
+    username: mark
+    password: mark123
     port: 5672
 
 management:
