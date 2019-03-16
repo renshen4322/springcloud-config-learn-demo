@@ -7,8 +7,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/renshen4322/spring-cloud-examples/     # 配置git仓库的地址
-          search-paths: config-repo                             # git仓库地址下的相对地址，可以配置多个，用,分割。
+          uri: https://github.com/renshen4322/springcloud-config-learn-demo/     # 配置git仓库的地址
+          search-paths: config-server/src/main/resources/configs                            # git仓库地址下的相对地址，可以配置多个，用,分割。
           username: renshen4322                                        # git仓库的账号
           password: gu425006
         #定义去拉取配置的地址
